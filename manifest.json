@@ -1,14 +1,17 @@
 {
   "manifest_version": 1,
   "name": "Escudo do Mestre",
-  "version": "1.0.0",
-  "author": "Luis O Embuense",
+  "version": "1.0.1",
+  "author": "Luis Curseiro",
   "description": "Um painel de apoio ao Mestre no Owlbear Rodeo com anotações, iniciativa e rolagens secretas.",
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/D20_icon.svg/512px-D20_icon.svg.png",
   "action": {
     "title": "Abrir Escudo do Mestre",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/D20_icon.svg/512px-D20_icon.svg.png",
-    "url": "https://luis-curseiro.github.io/escudo-do-mestre/"
+    "popover": {
+      "url": "index.html",
+      "height": 600,
+      "width": 500
+    }
   }
 }
-
