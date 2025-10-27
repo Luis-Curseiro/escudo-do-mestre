@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escudo do Mestre</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🧙 Escudo do Mestre</h1>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="notes">📜 Anotações</button>
+      <button class="tab-button" data-tab="initiative">⚔️ Iniciativa</button>
+      <button class="tab-button" data-tab="dice">🎲 Rolagens</button>
+    </div>
+
+    <div class="tab-content active" id="notes">
+      <textarea id="notesArea" placeholder="Suas anotações secretas..."></textarea>
+    </div>
+
+    <div class="tab-content" id="initiative">
+      <ul id="initiativeList"></ul>
+      <div class="initiative-controls">
+        <input type="text" id="initiativeInput" placeholder="Nome da criatura" />
+        <button id="addInitiative">Adicionar</button>
+        <button id="clearInitiative">Limpar</button>
+      </div>
+    </div>
+
+    <div class="tab-content" id="dice">
+      <div class="dice-buttons">
+        <button data-dice="4">d4</button>
+        <button data-dice="6">d6</button>
+        <button data-dice="8">d8</button>
+        <button data-dice="10">d10</button>
+        <button data-dice="12">d12</button>
+        <button data-dice="20">d20</button>
+      </div>
+      <div id="diceResult">🎲 Clique em um dado</div>
+    </div>
+  </div>
+</body>
+</html>
