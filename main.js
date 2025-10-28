@@ -2,11 +2,10 @@
 const tabs = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".tab-content");
 
-tabs.forEach((tab) => {
+tabs.forEach(tab => {
   tab.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.remove("active"));
-    contents.forEach((c) => c.classList.remove("active"));
-
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
     tab.classList.add("active");
     document.getElementById(tab.dataset.tab).classList.add("active");
   });
@@ -15,7 +14,6 @@ tabs.forEach((tab) => {
 // --- Anotações ---
 const notesArea = document.getElementById("notesArea");
 notesArea.value = localStorage.getItem("mestre_notes") || "";
-
 notesArea.addEventListener("input", () => {
   localStorage.setItem("mestre_notes", notesArea.value);
 });
@@ -67,7 +65,7 @@ renderInitiative();
 const diceButtons = document.querySelectorAll(".dice-buttons button");
 const diceResult = document.getElementById("diceResult");
 
-diceButtons.forEach((btn) => {
+diceButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     const sides = parseInt(btn.dataset.dice);
     const roll = Math.floor(Math.random() * sides) + 1;
