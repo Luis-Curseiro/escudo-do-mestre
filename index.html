@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escudo do Mestre</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>🧙 Escudo do Mestre</h1>
 
+    <!-- Abas -->
     <div class="tabs">
       <button class="tab-button active" data-tab="notes">📜 Anotações</button>
       <button class="tab-button" data-tab="initiative">⚔️ Iniciativa</button>
       <button class="tab-button" data-tab="dice">🎲 Rolagens</button>
     </div>
 
+    <!-- Conteúdo das abas -->
     <div class="tab-content active" id="notes">
       <textarea id="notesArea" placeholder="Suas anotações secretas..."></textarea>
     </div>
@@ -24,7 +26,7 @@
     <div class="tab-content" id="initiative">
       <ul id="initiativeList"></ul>
       <div class="initiative-controls">
-        <input type="text" id="initiativeInput" placeholder="Nome da criatura" />
+        <input type="text" id="initiativeInput" placeholder="Nome da criatura">
         <button id="addInitiative">Adicionar</button>
         <button id="clearInitiative">Limpar</button>
       </div>
