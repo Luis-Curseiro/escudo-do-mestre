@@ -8,7 +8,7 @@
   "action": {
     "title": "Abrir Escudo do Mestre",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/D20_icon.svg/512px-D20_icon.svg.png",
-    "popover": "index.html",
+    "popover": "/index.html",
     "width": 500,
     "height": 600
   }
